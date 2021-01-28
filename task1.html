@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>profile information</title>
+	<meta charset="iso-8859-9"/>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0'/>
+	<style >
+		header{
+			background: #1f4a75;
+			color: #fff;
+			padding: 1%;
+			text-align: center;
+
+		}
+		.parent{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		.child-1{
+			width:30%
+			border: 1px solid black;
+			box-shadow: 0px 8px 8px -8px black;
+			padding: 1%;
+			margin: 1%;
+		}
+		.child-2{
+			width: 50%;
+			border: 1px solid black;
+			box-shadow: 0px 8px 8px -8px black;
+			padding: 1%;
+			margin: 1%;
+			text-align:left;
+		}
+		.child-1 img{
+			width: 50%
+			text-align: center;
+			display: block;
+			margin: 0% auto ;
+		}
+@media only screen and(min-width: 320px)and(max-width: 480px){
+	.child-1,
+	.child-2{
+		width: 45%;
+		font-size: 25px;
+		background: blue;
+	}
+	@media only screen and(min-width: 481px)and(max-width: 768){
+		.child-1,
+		.child-2{
+			width: 90%;
+			font-size: 25px;
+
+		}
+	}
+	</style>
+
+
+	
+</head>
+<body>
+	<header>profile information</header>
+	<main class="parent">
+		<article class="child-1"><img src="profile.svg" width="100px" height="100px" alt="user">
+			<h2>Ambika</h2>
+			<a href="mailto:ambika@gmail.com">elurinagaambika@gmail.com</a>
+		</article>
+		<article class="child-2">
+			<h2>summery</h2><hr>
+			<ul>
+				<li>
+					knowlwdge on c
+				</li>
+				<li>
+					knowlwdge on java
+				</li>
+				<li>
+					knowlwdge on python
+				</li>
+				<li>
+					knowlwdge on c++
+				</li>
+			</ul>
+
+		</article>
+
+	</main>
+
+</body>
+</html>
